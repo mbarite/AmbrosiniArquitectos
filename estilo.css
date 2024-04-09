@@ -10,6 +10,7 @@
 .banner {
     background-color: #000;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 13px;
     padding-top: 13px;
@@ -44,11 +45,10 @@ nav {
     background-color: #cccccc;
     display: flex;
     justify-content: space-evenly;
+    align-content: center;
     list-style: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 320px;
-    padding-right: 320px;
+    padding: 1rem 15rem;
+    flex-wrap: wrap;
 }
 
 a {
@@ -65,42 +65,51 @@ a:active {
     transform: scale(1.5);
 }
 
-main.inicio {
+main.mainInicio {
     background: url(img/cozy-studio-apartment-with-bedroom-living-space.jpg) lightgray 50% / cover no-repeat;
-    background-color: #000;
     min-height: 100vh;
+    position: static;
+    padding: 1rem;
 }
 
 main.servicios {
     background: url(img/low-angle-shot-facade-white-modern-building-blue-clear-sky.jpg) lightgray 50% / cover no-repeat;
+    min-height: 100vh;
 }
 
 main.nosotros {
     background: url(img/black-white-exterior-building.jpg) lightgray 50% / cover no-repeat;
+    min-height: 100vh;
 }
 
 main.contacto {
     background: url(img/close-up-two-buildings-facade.jpg) lightgray 50% / cover no-repeat;
+    min-height: 100vh;
 }
 
-p.inicio {
+.divInicio {
+    background-color: #000;
+    opacity: 0.5;
+    margin: 5rem 20rem;
+}
+
+.pInicio {
     color: #fff;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: "Public Sans";
-    font-size: 40px;
-    padding: 6%;
+    font-size: 2vw;
+    padding: 5rem;
+    text-shadow: 3px 3px black;
 }
 
 footer{
     background-color: #000;
     position: fixed;
     bottom: 0px;
-    width: 100vw
+    width: 100vw;
 }
 
 .copyright {
@@ -108,4 +117,11 @@ footer{
     display: flex;
     justify-content: center;
     padding: 2rem;
+}
+
+.imgInicio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25vw;
 }
