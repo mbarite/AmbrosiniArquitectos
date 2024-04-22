@@ -70,7 +70,7 @@ main.contacto {
 
 .inicioCardContainer {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 5px;
     padding: 1rem;
     background-color: #cccccc;
 }
@@ -79,12 +79,16 @@ main.contacto {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    
+    margin-top: 1rem;
+    width: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
   }
 
 .fraseInicio {
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 1.5rem;
 }
 
 .serviciosContainer {
@@ -110,6 +114,10 @@ main.contacto {
     padding: 1rem;
   }
 
+.fotosServicios {
+    width: 100%;
+}
+
 .nosotrosContainer {
     display: flex;
     flex-direction: column;
@@ -133,7 +141,7 @@ main.contacto {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    font-size: 2vw;
+    font-size: 1rem;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     border-radius: 15px 0px 0px 15px;
     padding: 1rem;
@@ -143,12 +151,16 @@ main.contacto {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    font-size: 2vw;
+    font-size:  1rem;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     border-radius: 0px 15px 15px 0px;
     padding: 1rem;
     background-color: #cccccc;
   }
+
+  .fotosNosotros {
+    width: 25%;
+}
 
 .contactoContainer {
     display: flex;
@@ -278,25 +290,28 @@ footer{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 100%;
+        margin-top: 1rem;
+        width: 50%;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        border-radius: 5px;
       }
     
     .fraseInicio {
         text-align: center;
-        font-size: 2.5vw;
+        font-size: 1rem;
     }
     
     .serviciosContainer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        padding: 5rem 2rem;
+        padding: 0%;
     }
     
     
     .serviciosCard {
         padding: 1rem;
+        margin: 1rem;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         width: 75%;
         background-color: #cccccc;
@@ -305,11 +320,21 @@ footer{
     }
         
     .serviciosCardContainer {
-        font-size: 2vw;
+        font-size: 1rem;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        border-radius: 0px 0px 15px 15px;
+        border-radius: 15px;
         padding: 1rem;
       }
+
+      .fotosServicios {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+        width: 75%;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        border-radius: 5px;
+    }
     
     .nosotrosContainer {
         display: flex;
@@ -334,7 +359,7 @@ footer{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        font-size: 2vw;
+        font-size: 0.5rem;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         border-radius: 15px 0px 0px 15px;
         padding: 1rem;
@@ -344,24 +369,27 @@ footer{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        font-size: 2vw;
+        font-size: 0.5rem;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         border-radius: 0px 15px 15px 0px;
         padding: 1rem;
         background-color: #cccccc;
       }
+
+      .fotosNosotros {
+        width: 50%;
+    }
     
     .contactoContainer {
         display: flex;
         justify-content: center;
-        padding: 5rem 2rem;
+        padding: 3rem 0rem;
     }
     
-        .contactoCard {
+    .contactoCard {
         padding: 1rem;
-        background-color: #FFF;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        width: 50%;
+        width: 75%;
         background-color: #cccccc;
         border-radius: 15px;
         border: solid 2px black;
@@ -381,9 +409,9 @@ footer{
         width: 100%;
       }
     
-    .fraseInicio {
+    .fraseContacto {
         text-align: center;
-        font-size: 2.5vw;
+        font-size: 1rem;
     }
     
 
