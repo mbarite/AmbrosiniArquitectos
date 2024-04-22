@@ -7,102 +7,182 @@
     
   }
 
-.banner {
-    background-color: #000;
+header {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: wrap;
+    align-items: center;
     justify-content: space-between;
-    padding-bottom: 13px;
-    padding-top: 13px;
-    padding-left: 62px;
-    padding-right: 62px;
-}
-
-.info {
     background-color: #000;
-    text-align: right;
+    padding: 1rem;
 }
 
 .logo_ambrosini {
-    margin: 0px;
-    width: 325px;
-    height: 125px;
-    background-color: #000;
+    height: 10vh;
+    width: auto;
 }
 
-i {
-    background-color: #000;
-}
-
-p.info {
-    color: white;
-    background-color: #000;
-    padding: 6px;
-}
-
-nav {
-    border: #000 solid 2px;
-    background-color: #cccccc;
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    list-style: none;
-    padding: 1rem 15rem;
-    flex-wrap: wrap;
+li {
+    display: inline;
+    padding: 1rem;
 }
 
 a {
+    font-size: 20px;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
 }
 
-a:visited {
-    text-decoration: none;
-    color: #000;
-}
-
-a:active {
-    transform: scale(1.5);
-}
-
-main.mainInicio {
+main.inicio {
     background: url(img/cozy-studio-apartment-with-bedroom-living-space.jpg) lightgray 50% / cover no-repeat;
-    min-height: 100vh;
-    position: static;
-    padding: 1rem;
+    height: 90vh;
 }
 
 main.servicios {
     background: url(img/low-angle-shot-facade-white-modern-building-blue-clear-sky.jpg) lightgray 50% / cover no-repeat;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 main.nosotros {
     background: url(img/black-white-exterior-building.jpg) lightgray 50% / cover no-repeat;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 main.contacto {
     background: url(img/close-up-two-buildings-facade.jpg) lightgray 50% / cover no-repeat;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
-.divInicio {
-    background-color: #000;
-    opacity: 0.5;
-    margin: 5rem 20rem;
+.inicioContainer {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 2rem;
 }
 
-.pInicio {
-    color: #fff;
+.inicioCard {
+    padding: 1rem;
+    background-color: #FFF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 50%;
+    background-color: #cccccc;
+    border-radius: 15px;
+    border: solid 2px black;
+}
+
+.inicioCardContainer {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 15px 15px 0px 0px;
+    padding: 1rem;
+    background-color: #cccccc;
+}
+
+.logoAnios {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+.fraseInicio {
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.serviciosContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 2rem;
+}
+
+
+.serviciosCard {
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 25%;
+    background-color: #cccccc;
+    border-radius: 15px;
+    border: solid 2px black;
+}
+    
+.serviciosCardContainer {
+    font-size: 1vw;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 0px 0px 15px 15px;
+    padding: 1rem;
+  }
+
+.nosotrosContainer {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: "Public Sans";
+    align-items: center;
+    padding: 2rem;
+}
+
+
+.nosotrosCard {
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 80%;
+    background-color: #cccccc;
+    border-radius: 15px;
+    border: solid 2px black;
+}
+    
+.nosotrosCardContainerA {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     font-size: 2vw;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 15px 0px 0px 15px;
+    padding: 1rem;
+  }
+
+.nosotrosCardContainerB {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 2vw;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 0px 15px 15px 0px;
+    padding: 1rem;
+    background-color: #cccccc;
+  }
+
+.contactoContainer {
+    display: flex;
+    justify-content: center;
     padding: 5rem 2rem;
-    text-shadow: 3px 3px black;
+}
+
+.contactoCard {
+    padding: 1rem;
+    background-color: #FFF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 50%;
+    background-color: #cccccc;
+    border-radius: 15px;
+    border: solid 2px black;
+}
+
+.contactoCardContainer {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 0px 0px 15px 15px;
+    padding: 1rem;
+    background-color: #cccccc;
+}
+
+.maps {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+.fraseContacto {
+    text-align: center;
+    font-size: 1.5vw;
 }
 
 footer{
@@ -116,9 +196,206 @@ footer{
     padding: 2rem;
 }
 
-.imgInicio {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25vw;
+@media only screen and (max-width: 768px) {
+
+    *{
+        font-family: "Public Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        margin: 0px;
+        
+      }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #000;
+        padding: 1rem;
+    }
+    
+    .logo_ambrosini {
+        height: 10vh;
+        width: auto;
+    }
+    
+    li {
+        display: inline;
+        padding: 1rem;
+    }
+    
+    a {
+        font-size: 1.5vw;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    main.inicio {
+        background: url(img/cozy-studio-apartment-with-bedroom-living-space.jpg) lightgray 50% / cover no-repeat;
+        height: 90vh;
+    }
+    
+    main.servicios {
+        background: url(img/low-angle-shot-facade-white-modern-building-blue-clear-sky.jpg) lightgray 50% / cover no-repeat;
+        min-height: 90vh;
+    }
+    
+    main.nosotros {
+        background: url(img/black-white-exterior-building.jpg) lightgray 50% / cover no-repeat;
+        min-height: 90vh;
+    }
+    
+    main.contacto {
+        background: url(img/close-up-two-buildings-facade.jpg) lightgray 50% / cover no-repeat;
+        min-height: 90vh;
+    }
+    
+    .inicioContainer {
+        display: flex;
+        justify-content: center;
+        padding: 5rem 2rem;
+    }
+    
+    .inicioCard {
+        padding: 1rem;
+        background-color: #FFF;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        width: 50%;
+        background-color: #cccccc;
+        border-radius: 15px;
+        border: solid 2px black;
+    }
+    
+    .inicioCardContainer {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        border-radius: 15px 15px 0px 0px;
+        padding: 1rem;
+        background-color: #cccccc;
+    }
+    
+    .logoAnios {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+    
+    .fraseInicio {
+        text-align: center;
+        font-size: 2.5vw;
+    }
+    
+    .serviciosContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 5rem 2rem;
+    }
+    
+    
+    .serviciosCard {
+        padding: 1rem;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        width: 75%;
+        background-color: #cccccc;
+        border-radius: 15px;
+        border: solid 2px black;
+    }
+        
+    .serviciosCardContainer {
+        font-size: 2vw;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        border-radius: 0px 0px 15px 15px;
+        padding: 1rem;
+      }
+    
+    .nosotrosContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+    
+    .nosotrosCard {
+        display: flex;
+        margin: 1rem;
+        padding: 1rem;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        width: 80%;
+        background-color: #cccccc;
+        border-radius: 15px;
+        border: solid 2px black;
+    }
+        
+    .nosotrosCardContainerA {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 2vw;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        border-radius: 15px 0px 0px 15px;
+        padding: 1rem;
+      }
+    
+    .nosotrosCardContainerB {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 2vw;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        border-radius: 0px 15px 15px 0px;
+        padding: 1rem;
+        background-color: #cccccc;
+      }
+    
+    .contactoContainer {
+        display: flex;
+        justify-content: center;
+        padding: 5rem 2rem;
+    }
+    
+        .contactoCard {
+        padding: 1rem;
+        background-color: #FFF;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        width: 50%;
+        background-color: #cccccc;
+        border-radius: 15px;
+        border: solid 2px black;
+    }
+    
+    .contactoCardContainer {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        border-radius: 15px 15px 0px 0px;
+        padding: 1rem;
+        background-color: #cccccc;
+    }
+    
+    .maps {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+    
+    .fraseInicio {
+        text-align: center;
+        font-size: 2.5vw;
+    }
+    
+
+    footer{
+        background-color: #000;
+    }
+    
+    .copyright {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+    }
+
 }
