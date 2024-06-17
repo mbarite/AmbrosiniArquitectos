@@ -89,7 +89,7 @@ main.contacto {
 
 .fraseInicio {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .serviciosContainer {
@@ -277,9 +277,23 @@ body.dark-mode {
     background-color: #444;
 }
 
+.dark-mode-toggle {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background: transparent;
+}
+
+.dark-mode-toggle i {
+    color: #fff;
+    font-size: 1.5rem; /* Asegura un tamaño suficiente para que el icono sea visible */
+    display: inline-block; /* Asegura que el icono se muestre */
+}
+
 /* Botón de modo oscuro */
 .dark-mode-toggle {
-    background: none;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -288,6 +302,43 @@ body.dark-mode {
 }
 
 .dark-mode-toggle i {
+    color: #fff;
+}
+
+/* Menu Hamburguesa */
+
+header {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #999;
+    padding: 1rem;
+    position: relative; /* Asegura que el contenedor tenga una posición de referencia */
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    padding: 1rem;
+}
+
+.hamburger-menu {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.hamburger-menu i {
     color: #fff;
 }
 
@@ -301,6 +352,46 @@ body.dark-mode {
         margin: 0px;
         
       }
+
+      /* Menu Hamburguesa Mobile*/
+
+      .hamburger-menu {
+        display: inline-block;
+        margin-right: auto;
+    }
+
+    .nav-menu ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+        position: absolute;
+        top: 100%; /* Ajusta según la altura del header */
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .nav-menu ul.open {
+        display: flex;
+    }
+
+    li {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    a {
+        font-size: 1.5rem;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .logo_ambrosini {
+        height: 8vh;
+        width: auto;
+    }
     
     header {
         display: flex;
@@ -310,8 +401,8 @@ body.dark-mode {
     }
     
     .logo_ambrosini {
-        height: 10vh;
-        width: auto;
+        height: auto;
+        width: 100%;
         background-color: #000;
     }
     
@@ -332,35 +423,35 @@ body.dark-mode {
     
     main.inicio {
         background: url(img/cozy-studio-apartment-with-bedroom-living-space.jpg) lightgray 50% / cover no-repeat;
-        height: 90vh;
+        height: 50%;
     }
     
     main.servicios {
         background: url(img/low-angle-shot-facade-white-modern-building-blue-clear-sky.jpg) lightgray 50% / cover no-repeat;
-        min-height: 90vh;
+        min-height: 50%;
     }
     
     main.nosotros {
         background: url(img/black-white-exterior-building.jpg) lightgray 50% / cover no-repeat;
-        min-height: 90vh;
+        min-height: 50%;
     }
     
     main.contacto {
         background: url(img/close-up-two-buildings-facade.jpg) lightgray 50% / cover no-repeat;
-        min-height: 90vh;
+        min-height: 50%;
     }
     
     .inicioContainer {
         display: flex;
         justify-content: center;
-        padding: 5rem 2rem;
+        padding: 2rem;
     }
     
     .inicioCard {
         padding: 1rem;
         background-color: #FFF;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        width: 50%;
+        width: 100%;
         background-color: #cccccc;
         border-radius: 15px;
         border: solid 2px black;
@@ -378,27 +469,23 @@ body.dark-mode {
         margin-left: auto;
         margin-right: auto;
         margin-top: 1rem;
-        width: 50%;
+        width:100%;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         border-radius: 5px;
       }
     
-    .fraseInicio {
-        text-align: center;
-        font-size: 1rem;
-    }
     
     .serviciosContainer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0%;
+        padding: 2rem;
+        gap: 2rem;
     }
     
     
     .serviciosCard {
-        padding: 1rem;
-        margin: 1rem;
+        padding: 2rem;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         width: 75%;
         background-color: #cccccc;
@@ -418,7 +505,7 @@ body.dark-mode {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 1rem;
-        width: 75%;
+        width: 100%;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         border-radius: 5px;
     }
@@ -427,13 +514,14 @@ body.dark-mode {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 2rem;
+        gap: 2rem;
     }
     
     
     .nosotrosCard {
         display: flex;
         align-items: center;
-        margin: 1rem;
         padding: 1rem;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         width: 80%;
@@ -441,6 +529,8 @@ body.dark-mode {
         border-radius: 15px;
         border: solid 2px black;
         justify-content: center;
+        flex-direction: column;
+        margin: 0;
     }
         
     .nosotrosCardContainerA {
@@ -466,7 +556,7 @@ body.dark-mode {
 
       .fotosNosotros {
         height: 100%;
-        width: 50%;
+        width: 100%;
     }
     
     .contactoContainer {
