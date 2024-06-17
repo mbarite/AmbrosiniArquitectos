@@ -12,13 +12,14 @@ header {
     flex-flow: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: #000;
+    background-color: #999;
     padding: 1rem;
 }
 
 .logo_ambrosini {
     height: 10vh;
     width: auto;
+    background-color: #000;
 }
 
 li {
@@ -70,7 +71,7 @@ main.contacto {
 
 .inicioCardContainer {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 1rem;
     background-color: #cccccc;
 }
@@ -108,7 +109,7 @@ main.contacto {
 }
     
 .serviciosCardContainer {
-    font-size: 1vw;
+    font-size: 1.5rem;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     border-radius: 0px 0px 15px 15px;
     padding: 1rem;
@@ -116,6 +117,7 @@ main.contacto {
 
 .fotosServicios {
     width: 100%;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .nosotrosContainer {
@@ -135,6 +137,8 @@ main.contacto {
     background-color: #cccccc;
     border-radius: 15px;
     border: solid 2px black;
+    align-items: center;
+    gap: 1rem;
 }
     
 .nosotrosCardContainerA {
@@ -143,7 +147,7 @@ main.contacto {
     align-items: center;
     font-size: 1.5rem;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px;
     padding: 1rem;
   }
 
@@ -153,13 +157,15 @@ main.contacto {
     align-items: center;
     font-size:  1.5rem;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 15px;
     padding: 1rem;
     background-color: #cccccc;
   }
 
   .fotosNosotros {
-    width: 25%;
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
 }
 
 .contactoContainer {
@@ -197,11 +203,11 @@ main.contacto {
 
 .fraseContacto {
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 
 footer{
-    background-color: #000;
+    background-color: #999;
 }
 
 .copyright {
@@ -211,40 +217,118 @@ footer{
     padding: 2rem;
 }
 
+/* estilo.css */
+
+/* Modo nocturno */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode header, .dark-mode nav, .dark-mode footer {
+    background-color: #1c1c1c;
+}
+
+.dark-mode a {
+    color: #fff;
+}
+
+.dark-mode .inicioCard {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .inicioCardContainer {
+    color: #fff;
+    background-color: #444;
+}
+
+.dark-mode .serviciosCard{
+    color: #fff;
+    background-color: #444;
+}
+
+.dark-mode .serviciosCardContainer{
+    color: #fff;
+    background-color: #444;
+}
+
+.dark-mode .nosotrosCard{
+    color: #fff;
+    background-color: #444;
+}
+
+.dark-mode .nosotrosCardContainerA{
+    color: #fff;
+    background-color: #444;
+}
+
+.dark-mode .nosotrosCardContainerB{
+    color: #fff;
+    background-color: #444;
+}
+
+.dark-mode .contactoCard{
+    color: #fff;
+    background-color: #444;
+}
+
+.dark-mode .contactoCardContainer{
+    color: #fff;
+    background-color: #444;
+}
+
+/* Botón de modo oscuro */
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.dark-mode-toggle i {
+    color: #fff;
+}
+
+
 @media only screen and (max-width: 768px) {
 
     *{
         font-family: "Public Sans", sans-serif;
         font-optical-sizing: auto;
         font-weight: 500;
-        font-style: normal;
         margin: 0px;
         
       }
     
     header {
         display: flex;
-        flex-direction: column;
         justify-content: space-evenly;
-        background-color: #000;
+        background-color: #999;
         padding: 1rem;
     }
     
     .logo_ambrosini {
         height: 10vh;
         width: auto;
+        background-color: #000;
     }
     
     li {
-        display: inline;
+        display: flex;
+        flex-direction: column;
         padding: 1rem;
+        align-items: center;
     }
     
     a {
-        font-size: 1.5vw;
+        font-size: 1.5rem;
         color: #fff;
         text-decoration: none;
     }
+
+
     
     main.inicio {
         background: url(img/cozy-studio-apartment-with-bedroom-living-space.jpg) lightgray 50% / cover no-repeat;
@@ -343,12 +427,12 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 2rem;
     }
     
     
     .nosotrosCard {
         display: flex;
+        align-items: center;
         margin: 1rem;
         padding: 1rem;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -356,13 +440,14 @@ footer{
         background-color: #cccccc;
         border-radius: 15px;
         border: solid 2px black;
+        justify-content: center;
     }
         
     .nosotrosCardContainerA {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        font-size: 0.5rem;
+        font-size: 1rem;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         border-radius: 15px 0px 0px 15px;
         padding: 1rem;
@@ -372,7 +457,7 @@ footer{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        font-size: 0.5rem;
+        font-size: 1rem;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         border-radius: 0px 15px 15px 0px;
         padding: 1rem;
@@ -380,6 +465,7 @@ footer{
       }
 
       .fotosNosotros {
+        height: 100%;
         width: 50%;
     }
     
@@ -419,7 +505,7 @@ footer{
     
 
     footer{
-        background-color: #000;
+        background-color: #999;
     }
     
     .copyright {
